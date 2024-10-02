@@ -48,3 +48,20 @@ class DataIngestorFactory:
             return ZipDataIngestor()
         else:
             raise ValueError(f"No ingestor avaliable for the extension: {file_extension}")
+
+if __name__ == '__main__':
+    # # Specify the file path
+    # file_path = "/Users/prana/OneDrive/Desktop/prices-predicition-system/data/archive.zip"
+
+    # # Determine the file extension
+    # file_extension = os.path.splitext(file_path)[1]
+
+    # # Get the appropriate DataIngestor
+    # data_ingestor = DataIngestorFactory.get_data_ingestor(file_extension)
+
+    # # Ingest the data and load it into a DataFrame
+    # df = data_ingestor.ingest(file_path)
+
+    # # Now df contains the DataFrame from the extracted CSV
+    # print(df.head())  # Display the first few rows of the DataFrame
+    pass
